@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<title>オンライン申請</title>
+  <body>
+    <head>
+      <meta charset="UTF-8">
+      <title>Project</title>
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+      <!-- ここからスクリプト -->
+      <script>
+      t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
+
+      function speak(text){
+          location.href = 'sample.html';
+          window.onload = speechSynthesis.speak(
+              new SpeechSynthesisUtterance(text)
+          );
+      }
+      </script>
+      <!--ここからヘッダー-->
+      <header>
+          
+          <nav class="nav">
+              <ul>
+                  <li><h1>野々市市役所</h1></li>
+                  <li><a href="index.html">HOME</a></li>
+                  <li>F&Q</li>
+                  <li>お問い合わせ</li>
+                  <li>言語選択</li>
+                  <li>音声ガイド</li>
+              </ul>
+          </nav>      
+      </header>
+      <!--ここまでヘッダー-->
+    <main><!--ここからが変更部分↓-->
+      <h2>
+        <img src="images/arrow_01.png" width = "3%" alt = ""> 手続き一覧
+      </h2>
+      <nav class="nav1"> <!--ボタン用の関数定義-->
+        <ul>
+            <li><button onclick="location.href='application.html'" type = "submit"><img src="img/button_01.png" width = "70%" alt = ""></button></li> 
+            <li><button onclick="location.href=''" type = "submit"><img src="img/button_02.png" width = "70%" alt = ""></button></li> 
+   
+        </ul>
+      </nav>
+      <nav class="nav1"> <!--ボタン用の関数定義-->
+        <ul>
+            <li><button onclick="location.href=''" type = "submit"><img src="img/button_03.png" width = "70%" alt = ""></button></li> 
+            <li><button onclick="location.href=''" type = "submit"><img src="img/button_04.png" width = "70%" alt = ""></button></li> 
+   
+        </ul>
+      </nav>
+      <nav class="nav1"> <!--ボタン用の関数定義-->
+        <ul>
+            <li><button onclick="location.href=''" type = "submit"><img src="img/button_05.png" width = "70%" alt = ""></button></li> 
+            <li><button onclick="location.href=''" type = "submit"><img src="img/button_06.png" width = "70%" alt = ""></button></li> 
+   
+        </ul>
+      </nav>
+    <!--変更部分↑-->
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ここからスクリプト -->
+    <script>
+    t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
+    function speak(text){
+        location.href = 'sample.html';
+        window.onload = speechSynthesis.speak(
+            new SpeechSynthesisUtterance(text)
+        );
+    }
+    </script>
+    <!--ここからヘッダー-->
+    <header>
+        
+        <nav class="nav">
+            <ul>
+                <li><h1>野々市市役所</h1></li>
+                <li><a href="index.html">HOME</a></li>
+                <li>F&Q</li>
+                <li>お問い合わせ</li>
+                <li>言語選択</li>
+                <li>音声ガイド</li>
+            </ul>
+        </nav>      
+    </header>
+    <!--ここまでヘッダー-->
+    
+    <main>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
+        <p>
+            <br>
+            ・漢字<br>
+            <input type="text" name="subject" placeholder="工大">  <input type="text" name="subject" placeholder="太郎"><br>
+            <br>
+            ・カタカナ<br>
+            <input type="text" name="subject" placeholder="コウダイ">  <input type="text" name="subject" placeholder="タロウ">
+            <br>
+            <br>
+            ・住所<br>
+            <input type="text" name="subject" placeholder="">
+            <br>
+            <br>
+            ・電話番号<br>
+            <input type="text" name="subject" placeholder="">
+            <h3><a href="application_2.html"><img src="images/motion2.png" width = "20%" alt = "申請する"></a></h3>
+        </p>
+    </main>
+    <!--ここからフッター-->
+    <footer>
+    </footer>
+    <!--ここまでフッター-->
+</body>
+</html>

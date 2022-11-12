@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ここからスクリプト -->
+    <script>
+    t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
+    function speak(text){
+        location.href = 'sample.html';
+        window.onload = speechSynthesis.speak(
+            new SpeechSynthesisUtterance(text)
+        );
+    }
+    </script>
+    <!--ここからヘッダー-->
+    <header>
+        
+        <nav class="nav">
+            <ul>
+                <li><h1>野々市市役所</h1></li>
+                <li><a href="index.html">HOME</a></li>
+                <li>F&Q</li>
+                <li>お問い合わせ</li>
+                <li>言語選択</li>
+                <li>音声ガイド</li>
+            </ul>
+        </nav>      
+    </header>
+    <!--ここまでヘッダー-->
+    
+    <main>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> アンケート</h2>
+        <p>
+            アンケートへのご協力ありがとうございました。<br>
+            メニューバーのHOMEからトップページにお戻りください。
+        </p>
+    </main>
+    <!--ここからフッター-->
+    <footer>
+    </footer>
+    <!--ここまでフッター-->
+</body>
+</html>
