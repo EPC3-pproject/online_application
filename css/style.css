@@ -24,6 +24,41 @@ p{
 span{
     color: red;
 }
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.btn {
+    background-color: #ffffff;
+    border-bottom: 4px solid #ffffff;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 1.25rem 2rem;
+    text-decoration: none;
+    transition: none;
+}
+
+.btn:hover {
+    border-bottom: 0;
+    transform: translateY(4px);
+    margin-bottom: 4px;
+}
+.btn_1 {
+    background-color: rgb(149, 228, 149);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-weight: 700;
+    padding: 0rem 0rem;
+    text-decoration: none;
+}
+
+.btn_1:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 /* 全てのページに適用 - ヘッダー　*/
 
 .logo {
