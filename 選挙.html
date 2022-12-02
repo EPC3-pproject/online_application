@@ -1,1 +1,61 @@
-選挙
+<!DOCTYPE html>
+<html>
+
+<title>オンライン申請</title>
+  <body>
+    <head>
+      <meta charset="UTF-8">
+      <title>Project</title>
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+      <!-- ここからスクリプト -->
+      <script type="text/javascript" src="./script/speak_function.js"></script>
+    <!--ここからヘッダー-->
+    <header>
+        
+        <nav class="nav">
+            <ul>
+                <li><h1>野々市市役所</h1></li>
+                <li><button class="btn_1" onclick="location.href='index.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">言語選択</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">音声ガイド</button></li>
+            </ul>
+        </nav>      
+    </header>
+    <!--ここまでヘッダー-->
+    <main><!--ここからが変更部分↓-->
+      <h2>
+        <img src="images/arrow_01.png" width = "3%" alt = ""> 手続き一覧
+      </h2>
+      <nav class="nav1"> <!--ボタン用の関数定義-->
+        <ul>
+            <li><button class="btn" onclick="speak(t_daycare);location.href='application.html'" type = "submit"><img src="img/button_01.png" width = "70%" alt = ""></button></li> 
+            <li><button class="btn" onclick="location.href=''" type = "submit"><img src="img/button_15.png" width = "70%" alt = ""></button></li> 
+   
+        </ul>
+      </nav>
+
+    <!--変更部分↑-->
+    </main>
+
+  </body>
+  
+      <footer>
+        <br><br><br><br><br>
+        <div class="footer01">
+            <ul class="menu">
+                <li><button class="btn_2" onclick="location.href='index.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">言語選択</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">音声ガイド</button></li>
+            </ul>
+            <p class="copyright">
+              &copy; プロジェクトデザイン実践   オンライン申請の利用促進
+            </p>
+          </div>
+    </footer>
+  
+</html>
