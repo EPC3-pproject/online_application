@@ -9,16 +9,7 @@
       <link rel="stylesheet" href="./css/style.css">
   </head>
       <!-- ここからスクリプト -->
-      <script>
-      t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
-
-      function speak(text){
-          location.href = 'sample.html';
-          window.onload = speechSynthesis.speak(
-              new SpeechSynthesisUtterance(text)
-          );
-      }
-      </script>
+      <script type="text/javascript" src="./script/speak_function.js"></script>
       <!--ここからヘッダー-->
       <header>
           
@@ -40,7 +31,7 @@
       </h2>
       <nav class="nav1"> <!--ボタン用の関数定義-->
         <ul>
-            <li><button onclick="location.href='application.html'" type = "submit"><img src="img/button_01.png" width = "70%" alt = ""></button></li> 
+            <li><button onclick="speak(t_daycare)location.href='application.html'" type = "submit"><img src="img/button_01.png" width = "70%" alt = ""></button></li> 
             <li><button onclick="location.href=''" type = "submit"><img src="img/button_02.png" width = "70%" alt = ""></button></li> 
    
         </ul>
