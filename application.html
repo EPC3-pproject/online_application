@@ -7,14 +7,7 @@
 </head>
 <body>
     <!-- ここからスクリプト -->
-    <script>
-    t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
-    function speak(text){
-        location.href = 'sample.html';
-        window.onload = speechSynthesis.speak(
-            new SpeechSynthesisUtterance(text)
-        );
-    }
+    <script type="text/javascript" src="./script/speak_function.js"></script>
     </script>
     <!--ここからヘッダー-->
     <header>
@@ -42,7 +35,7 @@
         <h3>手続を行う人</h3>
         <p>【対象者】</p>
         <p>対象となるお子様の保護者</p>
-        <h3><a href="application_3.html"><img src="images/motion.png" width = "20%" alt = "申請する"></a></h3>
+        <h3><button onclick = "speak(t_application);location.href='application_3.html'" type = "submit"><img src="images/motion.png" width = "20%" alt = "申請する"></h3>
     </main>
     <!--ここからフッター-->
     <footer>
