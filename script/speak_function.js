@@ -1,8 +1,10 @@
 function speak(text){
-    location.href = 'sample.html';
-    window.onload = speechSynthesis.speak(
-        new SpeechSynthesisUtterance(text)
-    );
+    const synth = window.speechSynthesis;
+    const talk = new SpeechSynthesisUtterance(text);
+    if(synth.speaking=true){
+        synth.cancel();
+    }
+    synth.speak(talk);
 }
 
 t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
