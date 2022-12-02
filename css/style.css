@@ -59,6 +59,20 @@ button {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
+.btn_2 {
+    background: #e5e5e5;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-weight: 700;
+    padding: 0rem 0rem;
+    text-decoration: none;
+}
+
+.btn_2:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 /* 全てのページに適用 - ヘッダー　*/
 
 .logo {
@@ -101,6 +115,33 @@ main h2 {
 }
 
 /* 全てのページに適用 -　フッター　*/
+.footer01 {
+    color: #808080;
+    background: #e5e5e5;
+    padding: 30px;
+   }
+   .footer01 a {
+    color: #808080;
+    text-decoration: none;
+   }
+   .footer01 a:hover {
+    text-decoration: underline;
+   }
+   .footer01 .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .footer01 .menu li {
+    margin: 0;
+    padding: 0 20px 0 0;
+   }
+   .footer01 .copyright {
+    margin: 0;
+    padding: 20px 0 0 0;
+   }
 
 /* 個別のスタイル　*/
 .nav1 ul {
