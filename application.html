@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <title>Project</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script>
-        alert("音声ガイドのON/OFFを「音声ガイド」欄から選択してください");
-        window.sessionStorage.setItem("state",1);
-    </script>
 </head>
 <body>
     <!-- ここからスクリプト -->
     <script type="text/javascript" src="./script/speak_function.js"></script>
-    <script type="text/javascript" src="./script/change_state.js"></script>
+    </script>
     <!--ここからヘッダー-->
     <header>
         
@@ -23,29 +19,23 @@
                 <li><button class="btn_1" onclick="location.href=''" type = "submit">F&Q</button></li>
                 <li><button class="btn_1" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
                 <li><button class="btn_1" onclick="location.href=''" type = "submit">言語選択</button></li>
-                <li><button class="btn_1" onclick="location.href='change_guide.html'" type = "submit">音声ガイド</button></li>
+                <li><button class="btn_1" onclick="speak(t_none);location.href='change_guide.html'" type = "submit">音声ガイド</button></li>
             </ul>
         </nav>      
     </header>
     <!--ここまでヘッダー-->
     
     <main>
-        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> オンライン申請</h2>
-        <nav class="nav1">
-            <ul>
-                <li><button class="btn" onclick="location.href='妊娠・出産.html'" type = "submit"><img src="images/button1.png" width = "50%" alt = ""></button></li> 
-                <li><button class="btn" onclick="location.href='高齢者・介護.html'" type = "submit"><img src="images/button2.png" width = "50%" alt = ""></button></li> 
-                <li><button class="btn" onclick="location.href='防災・被災者支援.html'" type = "submit"><img src="images/button3.png" width = "50%" alt = ""></button></li> 
-                
-            </ul>
-        </nav>
-        <nav class="nav1">
-            <ul>
-                <li><button class="btn" onclick="speak(t_child);location.href='手続き一覧.html'" type = "submit"><img src="images/button4.png" width = "50%" alt = ""></button></li>
-                <li><button class="btn" onclick="location.href='選挙.html'" type = "submit"><img src="images/button5.png" width = "50%" alt = ""></button></li>
-                <li><button class="btn" onclick="location.href='その他.html'" type = "submit"><img src="images/button6.png" width = "50%" alt = ""></button></li>
-            </ul>
-        </nav>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込</h2>
+        <h3>受付期間　<span>20XX/YY/ZZ - 20XX/YY/ZZ</span></h3>
+        <h3>制度</h3>
+        <p>保育</p>
+        <h3>対象</h3>
+        <p>保育施設等の利用を希望する人</p>
+        <h3>手続を行う人</h3>
+        <p>【対象者】</p>
+        <p>対象となるお子様の保護者</p>
+        <h3><button class="btn" onclick = "speak(t_application);location.href='application_3.html'" type = "submit"><img src="images/motion.png" width = "20%" alt = "申請する"></h3>
     </main>
     <!--ここからフッター-->
     <footer>
