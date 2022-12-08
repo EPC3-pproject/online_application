@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ここからスクリプト -->
+    <script type="text/javascript" src="./script/speak_function.js"></script>
+    <!--ここからヘッダー-->
+    <header>
+        
+        <nav class="nav">
+            <ul>
+                <li><h1>野々市市役所</h1></li>
+                <li><button class="btn_1" onclick="location.href='index.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">言語選択</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">音声ガイド</button></li>
+            </ul>
+        </nav>      
+    </header>
+    <!--ここまでヘッダー-->
+    
+    <main>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
+        <button onclick = "locayion.href='after_input.html'"type = "submit"></button>
+        <form action="application_2.html">
+        <p>
+            
+            <br>
+            ・漢字<br>
+            <input type="text" required name="subject" value="工大">  <input type="text" required name="subject" value="次郎"><br>
+            <br>
+            ・カタカナ<br>
+            <input type="text" required name="subject" value="コウダイ">  <input type="text" required name="subject" value="ジロウ">
+            <br>
+            <br>
+            ・住所<br>
+            <input id = "住所" type="text" required name="subject" value="石川県野々市市扇が丘７番１号">
+            <br>
+            <br>
+            ・電話番号<br>
+            <input id = "電話番号" type="text" required name="subject" value="076-248-1100">
+            <br>
+            <br>
+            マイナンバー<br>
+            <input id = "マイナンバー" type="text" name="subject" value="1234567890123">
+            
+            <h3><button class = "btn" onclick="speak(t_prof); type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            
+            
+        </p>
+        </form>
+    </main>
+    <!--ここからフッター-->
+    <footer>
+        <br><br><br><br><br>
+        <div class="footer01">
+            <ul class="menu">
+                <li><button class="btn_2" onclick="location.href='index.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">言語選択</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">音声ガイド</button></li>
+            </ul>
+            <p class="copyright">
+              &copy; プロジェクトデザイン実践   オンライン申請の利用促進
+            </p>
+          </div>
+    </footer>
+    <!--ここまでフッター-->
+</body>
+</html>
