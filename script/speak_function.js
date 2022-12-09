@@ -1,10 +1,13 @@
 function speak(text){
+    guide_state=window.sessionStorage.getItem("state");
     const synth = window.speechSynthesis;
     const talk = new SpeechSynthesisUtterance(text);
     if(synth.speaking=true){
         synth.cancel();
     }
-    synth.speak(talk);
+    if(guide_state==1){
+        synth.speak(talk);
+    }
 }
 
 t_child = "子育ての項目に分類される手続はこちらになります。手続を選択して下さい。"
