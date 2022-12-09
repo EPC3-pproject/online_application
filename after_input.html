@@ -31,30 +31,40 @@
     
     <main>
         <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
-        <button onclick = "locayion.href='after_input.html'"type = "submit"></button>
-        <form action="application_2.html">
+        <button onclick = "location.href='after_input.html'"type = "submit">プロフィール情報を自動入力</button>
+        <form action="applcation_4.html">
         <p>
             
             <br>
-            ・漢字<br>
-            <input type="text" required name="subject" value="工大">  <input type="text" required name="subject" value="次郎"><br>
+            ・氏名（漢字）　必須br>
+            <input type="text" required name="subject" value="工大">  <input type="text" required name="subject" value="太郎"><br>
             <br>
-            ・カタカナ<br>
-            <input type="text" required name="subject" value="コウダイ">  <input type="text" required name="subject" value="ジロウ">
+            ・氏名（フリガナ）　必須<br>
+            <input type="text" required name="subject" value="コウダイ">  <input type="text" required name="subject" value="タロウ">
+            <br>
+            ・生年月日（YYYY/MM/DD）　必須<br>
+            <input type="text" required name="subject" value="2000/01/01">
+            <br>
+            ・性別　必須<br>
+            <input type="text" required name="subject" value="男">
+            <br>
+            ・郵便番号<br>
+            <input type="text" name="subject" value="921-8501">
+            <br>
+            ・現住所　必須<br>
+            <input type="text" required name="subject" value="石川県野々市市扇が丘７番１号">
+            <br>
+            ・電話番号　必須<br>
+            <input type="text" required name="subject" value="076-248-1100">
+            <br>
+            ・メールアドレス<br>
+            <input type="text" name="subject" value="koho@kanazawa-it.ac.jp">
             <br>
             <br>
-            ・住所<br>
-            <input id = "住所" type="text" required name="subject" value="石川県野々市市扇が丘７番１号">
-            <br>
-            <br>
-            ・電話番号<br>
-            <input id = "電話番号" type="text" required name="subject" value="076-248-1100">
-            <br>
-            <br>
-            マイナンバー<br>
-            <input id = "マイナンバー" type="text" name="subject" value="1234567890123">
+            マイナンバー　必須<br>
+            <input type="text" required name="subject" value="012345678901">
             
-            <h3><button class = "btn" onclick="speak(t_prof); type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            <h3><button class = "btn" onclick="speak(t_prof);  href='application_4.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
             
             
         </p>
