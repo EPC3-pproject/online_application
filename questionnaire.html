@@ -12,13 +12,18 @@
     <header>
         
         <nav class="nav">
-            <ul>
+            <ul class="ddmenu">
                 <li><h1>野々市市役所</h1></li>
-                <li><button class="btn_1" onclick="location.href='index.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_1" onclick="speak(t_none);location.href='HOME.html'" type = "submit">HOME</button></li>
                 <li><button class="btn_1" onclick="location.href=''" type = "submit">F&Q</button></li>
                 <li><button class="btn_1" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
                 <li><button class="btn_1" onclick="location.href=''" type = "submit">言語選択</button></li>
-                <li><button class="btn_1" onclick="location.href=''" type = "submit">音声ガイド</button></li>
+                <li><button class="btn_1" type = "submit">音声ガイド</button>
+                    <ul>
+                        <li><a><button onclick = "speak(t_active);active()">　　　Active　　　</button></a></li>
+                        <li><a><button onclick = "speak(t_mute);mute()">　　　Mute　　　</button></a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>      
     </header>
@@ -42,7 +47,6 @@
                 <li><button class="btn_2" onclick="location.href=''" type = "submit">F&Q</button></li>
                 <li><button class="btn_2" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
                 <li><button class="btn_2" onclick="location.href=''" type = "submit">言語選択</button></li>
-                <li><button class="btn_2" onclick="location.href=''" type = "submit">音声ガイド</button></li>
             </ul>
             <p class="copyright">
               &copy; プロジェクトデザイン実践   オンライン申請の利用促進
