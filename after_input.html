@@ -33,39 +33,55 @@
     <main>
         <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
         <button onclick = "location.href='after_input.html'"type = "submit">プロフィール情報を自動入力</button>
-        <form action="applcation_4.html">
+        <form action="check_inf.html">
         <p>
             
             <br>
-            ・氏名（漢字）　必須br>
-            <input type="text" required name="subject" value="工大">  <input type="text" required name="subject" value="太郎"><br>
+            ・氏名（漢字）　必須<br>
+            <input id=t1 type="text" required name="subject" value="工大">  <input id=t2 type="text" required name="subject" value="太郎"><br>
             <br>
             ・氏名（フリガナ）　必須<br>
-            <input type="text" required name="subject" value="コウダイ">  <input type="text" required name="subject" value="タロウ">
+            <input id=t3 type="text" required name="subject" value="コウダイ">  <input id=t4 type="text" required name="subject" value="タロウ">
             <br>
             ・生年月日（YYYY/MM/DD）　必須<br>
-            <input type="text" required name="subject" value="2000/01/01">
+            <input id=t5 type="text" required name="subject" value="2000/01/01">
             <br>
             ・性別　必須<br>
-            <input type="text" required name="subject" value="男">
+            <input id=t6 type="text" required name="subject" value="男">
             <br>
             ・郵便番号<br>
-            <input type="text" name="subject" value="921-8501">
+            <input id=t7 type="text" name="subject" value="921-8501">
             <br>
             ・現住所　必須<br>
-            <input type="text" required name="subject" value="石川県野々市市扇が丘７番１号">
+            <input id=t8 type="text" required name="subject" value="石川県野々市市扇が丘７番１号">
             <br>
             ・電話番号　必須<br>
-            <input type="text" required name="subject" value="076-248-1100">
+            <input id=t9 type="text" required name="subject" value="076-248-1100">
             <br>
             ・メールアドレス<br>
-            <input type="text" name="subject" value="koho@kanazawa-it.ac.jp">
+            <input id=t10 type="text" name="subject" value="koho@kanazawa-it.ac.jp">
             <br>
             <br>
             マイナンバー　必須<br>
-            <input type="text" required name="subject" value="012345678901">
+            <input id=t11 type="text" required name="subject" value="012345678901">
+
+            <script>
+                var infes=function(){
+                    window.sessionStorage.setItem("t1",t1.value);
+                    window.sessionStorage.setItem("t2",t2.value);
+                    window.sessionStorage.setItem("t3",t3.value);
+                    window.sessionStorage.setItem("t4",t4.value);
+                    window.sessionStorage.setItem("t5",t5.value);
+                    window.sessionStorage.setItem("t6",t6.value);
+                    window.sessionStorage.setItem("t7",t7.value);
+                    window.sessionStorage.setItem("t8",t8.value);
+                    window.sessionStorage.setItem("t9",t9.value);
+                    window.sessionStorage.setItem("t10",t10.value);
+                    window.sessionStorage.setItem("t11",t11.value);
+                }
+            </script>
             
-            <h3><button class = "btn" onclick="speak(t_prof);  href='application_4.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            <h3><button class = "btn" onclick="speak(t_prof); infes();  href='application_4.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
             
             
         </p>

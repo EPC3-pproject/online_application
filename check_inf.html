@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ここからスクリプト -->
+    <script type="text/javascript" src="./script/speak_function.js"></script>
+    <script type="text/javascript" src="./script/change_state.js"></script>
+    <script type="text/javascript" src="./script/innerHTML.js"></script>
+    <!--ここからヘッダー-->
+    <header>
+        
+        <nav class="nav">
+            <ul class="ddmenu">
+                <li><h1>野々市市役所</h1></li>
+                <li><button class="btn_1" onclick="speak(t_none);location.href='HOME.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">言語選択</button></li>
+                <li><button class="btn_1" type = "submit">音声ガイド</button>
+                    <ul>
+                        <li><a><button onclick = "speak(t_active);active()">　　　Active　　　</button></a></li>
+                        <li><a><button onclick = "speak(t_mute);mute()">　　　Mute　　　</button></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>      
+    </header>
+    <!--ここまでヘッダー-->
+    
+    <main>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
+        <form action="application_4.html">
+        <p>
+            
+            <button class ="btn" onclick = "location.href='after_input.html'"type = "submit"><img src="images/motion3.png" width = "50%" alt = "申請する"></button>
+            <br>
+            ・氏名（漢字）　<br>
+            <div id="t1"></div>
+            <br>
+            ・氏名（フリガナ）　<br>
+            <div id="t3"></div>
+            <br>
+            ・生年月日（YYYY/MM/DD）　<br>
+            <div id="t5"></div>
+            <br>
+            ・性別　<br>
+            <div id="t6"></div>
+            <br>
+            ・郵便番号<br>
+            <div id="t7"></div>
+            <br>
+            ・現住所　<br>
+            <div id="t8"></div>
+            <br>
+            ・電話番号　<br>
+            <div id="t9"></div>
+            <br>
+            ・メールアドレス<br>
+            <div id="t10"></div>
+            <br>
+            <br>
+            マイナンバー　<br>
+            <div id="t11"></div>
+
+            <script>
+                var t1=window.sessionStorage.getItem("t1");
+                var t2=window.sessionStorage.getItem("t2");
+                var t3=window.sessionStorage.getItem("t3");
+                var t4=window.sessionStorage.getItem("t4");
+                var t5=window.sessionStorage.getItem("t5");
+                var t6=window.sessionStorage.getItem("t6");
+                var t7=window.sessionStorage.getItem("t7");
+                var t8=window.sessionStorage.getItem("t8");
+                var t9=window.sessionStorage.getItem("t9");
+                var t10=window.sessionStorage.getItem("t10");
+                var t11=window.sessionStorage.getItem("t11");
+
+                t1=t1+" "+t2;
+                t3=t3+" "+t4;
+                innerHTML("t1",t1);
+                innerHTML("t3",t3);
+                innerHTML("t5",t5);
+                innerHTML("t6",t6);
+                innerHTML("t7",t7);
+                innerHTML("t8",t8);
+                innerHTML("t9",t9);
+                innerHTML("t10",t10);
+                innerHTML("t11",t11);
+            </script>
+            
+            <h3><button class = "btn" onclick="speak(t_prof);  href='application_4.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            
+            
+        </p>
+        </form>
+    </main>
+    <!--ここからフッター-->
+    <footer>
+        <br><br><br><br><br>
+        <div class="footer01">
+            <ul class="menu">
+                <li><button class="btn_2" onclick="location.href='HOME.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">言語選択</button></li>
+            </ul>
+            <p class="copyright">
+              &copy; プロジェクトデザイン実践   オンライン申請の利用促進
+            </p>
+          </div>
+    </footer>
+    <!--ここまでフッター-->
+</body>
+</html>
+
+    <header>
+        
+        <nav class="nav">
+            <ul class="ddmenu">
+                <li><h1>野々市市役所</h1></li>
+                <li><button class="btn_1" onclick="speak(t_none);location.href='HOME.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_1" onclick="location.href=''" type = "submit">言語選択</button></li>
+                <li><button class="btn_1" type = "submit">音声ガイド</button>
+                    <ul>
+                        <li><a><button onclick = "speak(t_active);active()">　　　Active　　　</button></a></li>
+                        <li><a><button onclick = "speak(t_mute);mute()">　　　Mute　　　</button></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>      
+    </header>
+    <!--ここまでヘッダー-->
+    
+    <main>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
+        <form action="application_4.html">
+        <p>
+            <button class ="btn" onclick = "location.href='after_input.html'"type = "submit"><img src="images/motion3.png" width = "50%" alt = "申請する"></button>
+            <br>
+            ・氏名（漢字）　<br>
+            <input id = t1 type="text" required name="subject" placeholder="工大">  <input id = t2 type="text" required name="subject" placeholder="太郎"><br>
+            <br>
+            ・氏名（フリガナ）　<br>
+            <input id = t3 type="text" required name="subject" placeholder="コウダイ">  <input id = t4 type="text" required name="subject" placeholder="タロウ"><span>必須</span>
+            <br>
+            ・生年月日（YYYY/MM/DD）　<br>
+            <input id = t5 type="text" required name="subject" placeholder=""><span>必須</span>
+            <br>
+            ・性別　<br>
+            <input id = t6 type="text" required name="subject" placeholder=""><span>必須</span>
+            <br>
+            ・郵便番号<br>
+            <input id = t7 type="text" name="subject" placeholder="">
+            <br>
+            ・現住所　<br>
+            <input id = t8 type="text" required name="subject" placeholder=""><span>必須</span>
+            <br>
+            ・電話番号　<br>
+            <input id = t9 type="text" required name="subject" placeholder=""><span>必須</span>
+            <br>
+            ・メールアドレス<br>
+            <input id = t10 type="text" name="subject" placeholder="">
+            <br>
+            <br>
+            マイナンバー　<br>
+            <input id = t11 type="text" required name="subject" placeholder="マイナンバー"><span>必須</span>
+            
+            <h3><button class = "btn" onclick="speak(t_prof);  href='application_4.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            
+            
+        </p>
+        </form>
+    </main>
+    <!--ここからフッター-->
+    <footer>
+        <br><br><br><br><br>
+        <div class="footer01">
+            <ul class="menu">
+                <li><button class="btn_2" onclick="location.href='HOME.html'" type = "submit">HOME</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">F&Q</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">お問い合わせ</button></li>
+                <li><button class="btn_2" onclick="location.href=''" type = "submit">言語選択</button></li>
+            </ul>
+            <p class="copyright">
+              &copy; プロジェクトデザイン実践   オンライン申請の利用促進
+            </p>
+          </div>
+    </footer>
+    <!--ここまでフッター-->
+</body>
+</html>

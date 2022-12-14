@@ -8,6 +8,7 @@
 <body>
     <!-- ここからスクリプト -->
     <script type="text/javascript" src="./script/speak_function.js"></script>
+    <script type="text/javascript" src="./script/change_state.js"></script>
     <!--ここからヘッダー-->
     <header>
         
@@ -31,39 +32,55 @@
     
     <main>
         <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
-        <form action="application_4.html">
+        <form action="check_inf.html">
         <p>
             <button class ="btn" onclick = "location.href='after_input.html'"type = "submit"><img src="images/motion3.png" width = "50%" alt = "申請する"></button>
             <br>
             ・氏名（漢字）　<br>
-            <input type="text" required name="subject" placeholder="工大">  <input type="text" required name="subject" placeholder="太郎"><br>
+            <input id = t1 type="text" required name="subject" placeholder="工大">  <input id = t2 type="text" required name="subject" placeholder="太郎"><br>
             <br>
             ・氏名（フリガナ）　<br>
-            <input type="text" required name="subject" placeholder="コウダイ">  <input type="text" required name="subject" placeholder="タロウ"><span>必須</span>
+            <input id = t3 type="text" required name="subject" placeholder="コウダイ">  <input id = t4 type="text" required name="subject" placeholder="タロウ"><span>必須</span>
             <br>
             ・生年月日（YYYY/MM/DD）　<br>
-            <input type="text" required name="subject" placeholder=""><span>必須</span>
+            <input id = t5 type="text" required name="subject" placeholder=""><span>必須</span>
             <br>
             ・性別　<br>
-            <input type="text" required name="subject" placeholder=""><span>必須</span>
+            <input id = t6 type="text" required name="subject" placeholder=""><span>必須</span>
             <br>
             ・郵便番号<br>
-            <input type="text" name="subject" placeholder="">
+            <input id = t7 type="text" name="subject" placeholder="">
             <br>
             ・現住所　<br>
-            <input type="text" required name="subject" placeholder=""><span>必須</span>
+            <input id = t8 type="text" required name="subject" placeholder=""><span>必須</span>
             <br>
             ・電話番号　<br>
-            <input type="text" required name="subject" placeholder=""><span>必須</span>
+            <input id = t9 type="text" required name="subject" placeholder=""><span>必須</span>
             <br>
             ・メールアドレス<br>
-            <input type="text" name="subject" placeholder="">
+            <input id = t10 type="text" name="subject" placeholder="">
             <br>
             <br>
             マイナンバー　<br>
-            <input type="text" required name="subject" placeholder="マイナンバー"><span>必須</span>
+            <input id = t11 type="text" required name="subject" placeholder="マイナンバー"><span>必須</span>
+
+            <script>
+                var infes=function(){
+                    window.sessionStorage.setItem("t1",t1.value);
+                    window.sessionStorage.setItem("t2",t2.value);
+                    window.sessionStorage.setItem("t3",t3.value);
+                    window.sessionStorage.setItem("t4",t4.value);
+                    window.sessionStorage.setItem("t5",t5.value);
+                    window.sessionStorage.setItem("t6",t6.value);
+                    window.sessionStorage.setItem("t7",t7.value);
+                    window.sessionStorage.setItem("t8",t8.value);
+                    window.sessionStorage.setItem("t9",t9.value);
+                    window.sessionStorage.setItem("t10",t10.value);
+                    window.sessionStorage.setItem("t11",t11.value);
+                }
+            </script>
             
-            <h3><button class = "btn" onclick="speak(t_prof);  href='application_4.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            <h3><button class = "btn" onclick="speak(t_prof); infes();  href='check_inf.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
             
             
         </p>
