@@ -32,15 +32,53 @@
     <!--ここまでヘッダー-->
     
     <main>
-        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 氏名変更／住所変更等の届出</h2>
-        <p>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
+        <div class="st">
             <br>
             ・確認画面
-            <h2><img src="images/confirmation.png" width = "50%" alt = ""></h2>
-            <h1><span>※以上の情報でよろしいでしょうか？</span></h1>
-            <h2><button onclick="speak(t_check); href='complete.html'"><img src="images/yes.png" width = "15%" alt = ""></a> <a href="application_3.html"><img src="images/no.png" width = "15%" alt = ""></a></h2>
+            <br>
+            ・氏名（漢字）　<br>
+            <div id="tx1"></div>
+            <br>
+            ・氏名（フリガナ）　<br>
+            <div id="tx3"></div>
+            <br>
+            ・生年月日（YYYY/MM/DD）　<br>
+            <div id="tx5"></div>
+            <br>
+            ・性別　<br>
+            <div id="tx6"></div>
+            <br>
+            ・郵便番号<br>
+            <div id="tx7"></div>
+            <br>
+            ・現住所　<br>
+            <div id="tx8"></div>
 
-        </p>
+            <script>
+                var tx1=window.sessionStorage.getItem("tx1");
+                var tx2=window.sessionStorage.getItem("tx2");
+                var tx3=window.sessionStorage.getItem("tx3");
+                var tx4=window.sessionStorage.getItem("tx4");
+                var tx5=window.sessionStorage.getItem("tx5");
+                var tx6=window.sessionStorage.getItem("tx6");
+                var tx7=window.sessionStorage.getItem("tx7");
+                var tx8=window.sessionStorage.getItem("tx8");
+
+                tx1=tx1+" "+tx2;
+                tx3=tx3+" "+tx4;
+                innerHTML("tx1",tx1);
+                innerHTML("tx3",tx3);
+                innerHTML("tx5",tx5);
+                innerHTML("tx6",tx6);
+                innerHTML("tx7",tx7);
+                innerHTML("tx8",tx8);
+
+            </script>
+
+            <h2><button onclick="speak(t_check); location.href='complete.html'"><img src="images/yes.png" width = "50%" alt = ""></button> <button onclick= "href='application_3.html'"><img src="images/no.png" width = "50%" alt = ""></a></h2>
+
+        </div>
     </main>
     <!--ここからフッター-->
     <footer>

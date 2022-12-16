@@ -31,7 +31,7 @@
     <!--ここまでヘッダー-->
     
     <main>
-        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 氏名変更／住所変更等の届出</h2>
+        <h2><img src="images/arrow_01.png" width = "3%" alt = ""> 保育施設などの利用申込(オンライン申請)</h2>
         <form action="confirmation.html">
         <p>
             変更前情報<br>
@@ -62,27 +62,38 @@
             <br>
             <br>
             ・氏名（漢字）　<br>
-            <input type="text" required name="subject" placeholder="">  <input type="text" required name="subject" placeholder=""><br>
+            <input id=tx1 type="text" required name="subject" placeholder="">  <input id=tx2 type="text" required name="subject" placeholder=""><br>
             <br>
             ・氏名（フリガナ）　<br>
-            <input type="text" required name="subject" placeholder="">  <input type="text" required name="subject" placeholder="">
+            <input id=tx3 type="text" required name="subject" placeholder="">  <input id=tx4 type="text" required name="subject" placeholder="">
             <br>
             ・生年月日（YYYY/MM/DD）　<br>
-            <input type="text" required name="subject" placeholder="">
+            <input id=tx5 type="text" required name="subject" placeholder="">
             <br>
             ・性別　<br>
-            <input type="text" required name="subject" placeholder="">
+            <input id=tx6 type="text" required name="subject" placeholder="">
             <br>
             ・郵便番号<br>
-            <input type="text" name="subject" placeholder="">
+            <input id=tx7 type="text" name="subject" placeholder="">
             <br>
             ・現住所　<br>
-            <input type="text" required name="subject" placeholder="">
+            <input id=tx8 type="text" required name="subject" placeholder="">
             <br>
             
+            <script>
+                var infes=function(){
+                    window.sessionStorage.setItem("tx1",tx1.value);
+                    window.sessionStorage.setItem("tx2",tx2.value);
+                    window.sessionStorage.setItem("tx3",tx3.value);
+                    window.sessionStorage.setItem("tx4",tx4.value);
+                    window.sessionStorage.setItem("tx5",tx5.value);
+                    window.sessionStorage.setItem("tx6",tx6.value);
+                    window.sessionStorage.setItem("tx7",tx7.value);
+                    window.sessionStorage.setItem("tx8",tx8.value);
+                }
+            </script>
             
-            
-            <h3><button class = "btn" onclick="speak(t_prof);  href='confirmation.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
+            <h3><button class = "btn" onclick="speak(t_prof); infes();  href='confirmation.html'; type='submit'"><img src="images/motion2.png" width = "50%" alt = "申請する"></a></button></h3>  
             
             
         </p>
