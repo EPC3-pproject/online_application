@@ -29,6 +29,9 @@ button {
     outline: none;
     background: transparent;
 }
+.st {
+    margin: 3px 0 0 50px;
+}
 .btn {
     background-color: #ffffff;
     border-bottom: 4px solid #ffffff;
